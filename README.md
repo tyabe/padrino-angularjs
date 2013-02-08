@@ -1,6 +1,6 @@
-# Padrino::Angularjs
+# Padrino AngularJS
 
-TODO: Write a gem description
+This gem wraps the [Andular.js](http://angularjs.org/) library for use in Padrino and above.
 
 ## Installation
 
@@ -18,7 +18,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Install Angular.js library for your app:
+
+    $ padrino g angularjs_install
+
+Options|Default|Aliases|Description
+-------|-------|-------|-----------
+root   |.      |-r     |specify the root destination path
+app    |/app   |-a     |specify the application
+destroy|false  |-d     |removes all generated files
+
+You'll be ready to go!
+
+If you require optional angular files, you may include them as well in your Javascript manifest file (*app*/assets/javascripts/application.js)  
+For example:
+
+    //= require angular-resource
 
 ## Contributing
 
